@@ -10,4 +10,12 @@ export class BgImage {
 		this.author = data.author
 		this.largeImgUrl = data.largeImgUrl
 	}
+
+
+
+	get ActiveBackgroundImg() {
+		return `
+	
+	`
+	}
 }
