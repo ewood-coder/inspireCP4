@@ -1,24 +1,24 @@
 export class Account {
-  constructor(data) {
-    this.id = data.id
-    this.email = data.email
-    this.nickname = data.nickname
-    this.name = data.name
-    this.picture = data.picture
-    // TODO add additional properties if needed
-  }
+	constructor (data) {
+		this.id = data.id
+		this.email = data.email
+		this.nickname = data.nickname
+		this.name = data.name
+		this.picture = data.picture
+		// TODO add additional properties if needed
+	}
 
-  get AccountCardTemplate() {
-    return /*html*/`
+	get AccountCardTemplate() {
+		return /*html*/`
     <div class="account-details text-center mb-2">
         <img class="rounded-circle profile-picture" src="${this.picture}" alt="${this.name}">
         <p class="fs-3"> <i class="mdi mdi-account"></i> <b>${this.displayName}</b></p>
     </div>
     `
-  }
+	}
 
-  get AccountFormTemplate() {
-    return /*html*/`
+	get AccountFormTemplate() {
+		return /*html*/`
     <form onsubmit="app.AccountController.updateAccount()">
       <div class="text-start">
         <div>
@@ -35,9 +35,9 @@ export class Account {
       </div>
     </form>
     `
-  }
+	}
 
-  get displayName() {
-    return this.nickname || this.name
-  }
+	get displayName() {
+		return this.nickname || this.name
+	}
 }
