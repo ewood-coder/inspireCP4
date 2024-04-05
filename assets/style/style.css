@@ -15,7 +15,7 @@
 }
 
 body {
-	background-image: url('../img/testBG.png');
+	background-image: url('../img/testBG2.png');
 	background-size: cover;
 	color: white;
 }
@@ -24,9 +24,9 @@ body {
 /* --------------------------------------------- */
 
 .filterBox {
-	/* background-color: rgba(255, 255, 255, 0.4); */
+	background-color: rgba(71, 71, 71, 0.4);
 	backdrop-filter: blur(15px);
-	border-radius: 15px;
+	border-radius: 10px;
 }
 
 .fontSize {
