@@ -9,3 +9,80 @@
 .profile-picture.profile-picture-sm {
 	height: 64px;
 }
+
+.hidden {
+	display: none;
+}
+
+body {
+	background-image: url('../img/testBG.png');
+	background-size: cover;
+	color: white;
+}
+
+
+/* --------------------------------------------- */
+
+.filterBox {
+	/* background-color: rgba(255, 255, 255, 0.4); */
+	backdrop-filter: blur(15px);
+	border-radius: 15px;
+}
+
+.fontSize {
+	font-size: 70px;
+}
+
+.li {
+	font-size: 20px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+@media screen and (max-width: 767px) {
+	.width {
+		width: 100%;
+	}
+}
+
+/* --------------------------------------------- */
+
+form.example input[type=text] {
+	padding: 10px;
+	font-size: 17px;
+	border: 1px solid grey;
+	float: left;
+	width: 80%;
+	background: #f1f1f1;
+
+	border-radius: 10px 0 0 10px;
+}
+
+/* Style the submit button */
+form.example button {
+	float: left;
+	width: 20%;
+	padding: 10px;
+	background: #2196F3;
+	color: white;
+	font-size: 17px;
+	border: 1px solid grey;
+	border-left: none;
+	/* Prevent double borders */
+	cursor: pointer;
+
+	border-radius: 0 10px 10px 0;
+}
+
+form.example button:hover {
+	background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+	content: "";
+	clear: both;
+	display: table;
+}
