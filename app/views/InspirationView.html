@@ -27,6 +27,8 @@
 	<section class="d-flex align-items-md-end justify-content-between flex-wrap flex-md-nowrap">
 
 		<div id="quote" class="filterBox p-3 me-md-3 text-center">
+			<!-- TODO: CREATE FUNC FOR SHOWING AUTHOR ON HOVER (use transitions to look good) -->
+			<h5 class="mb-3 hidden">author name</h5>
 			<h5>"You can't shake hands with a clenched fist."</h5>
 		</div>
 
@@ -38,22 +40,30 @@
 
 				<li class="row align-items-center">
 					<div class="col-10">Create the clock</div>
-					<i class="li col-2 mdi mdi-trash-can"></i>
+					<button class="hover col-2" onclick="deleteTodo()">
+						<i class="li mdi mdi-trash-can"></i>
+					</button>
 				</li>
 
 				<li class="row align-items-center">
 					<div class="col-10">Flip the weather</div>
-					<i class="li col-2 mdi mdi-trash-can"></i>
+					<button class="hover col-2" onclick="deleteTodo()">
+						<i class="li mdi mdi-trash-can"></i>
+					</button>
 				</li>
 
 				<li class="row align-items-center">
 					<div class="col-10">Hover Quote</div>
-					<i class="li col-2 mdi mdi-trash-can"></i>
+					<button class="hover col-2" onclick="deleteTodo()">
+						<i class="li mdi mdi-trash-can"></i>
+					</button>
 				</li>
 
 				<li class="row align-items-center">
 					<div class="col-10">Get Graded</div>
-					<i class="li col-2 mdi mdi-trash-can"></i>
+					<button class="hover col-2" onclick="deleteTodo()">
+						<i class="li mdi mdi-trash-can"></i>
+					</button>
 				</li>
 
 			</ul>

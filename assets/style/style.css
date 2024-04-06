@@ -47,6 +47,16 @@ ul {
 	}
 }
 
+.hover {
+	background: none;
+	border: none;
+	color: white;
+}
+
+.hover:hover {
+	color: red;
+}
+
 /* --------------------------------------------- */
 
 form.example input[type=text] {
