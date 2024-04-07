@@ -12,6 +12,7 @@ class TodosService {
 		const todo = AppState.todos.find(todo => todo.id == id)
 		todo.completed = !todo.completed
 		const response = await api.put(`api/todos/${id}`, todo)
+		AppState.emit('todos')
 	}
 
 	async createTodo(todoFormData) {

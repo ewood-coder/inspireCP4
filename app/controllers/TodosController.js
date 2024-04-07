@@ -44,7 +44,8 @@ export class TodosController {
 	}
 
 	drawTodoCount() {
-		setText('todoCount', AppState.todos.length)
+		const completedCount = AppState.todos.filter(todo => todo.completed)
+		setText('todoCount', AppState.todos.length - completedCount.length)
 	}
 
 	async deleteTodo(id) {
