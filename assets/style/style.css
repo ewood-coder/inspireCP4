@@ -15,7 +15,7 @@
 }
 
 body {
-	background-image: url('../img/testBG2.png');
+	/* background-image: url('../img/testBG2.png'); */
 	background-size: cover;
 	color: white;
 }
@@ -51,11 +51,24 @@ ul {
 	background: none;
 	border: none;
 	color: white;
+	transition: all 300ms ease;
 }
 
 .hover:hover {
 	color: red;
 }
+
+#quoteParent #quoteAuthor {
+	display: none;
+	/* transition: all 300ms ease-in; */
+
+}
+
+#quoteParent:hover #quoteAuthor {
+	display: block;
+}
+
+
 
 /* --------------------------------------------- */
 

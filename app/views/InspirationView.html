@@ -4,7 +4,7 @@
 		<div class="d-flex">
 
 			<div id="ImgAuthor" class="flex-grow-1">
-				<h5 class="filterBox d-inline-flex p-2">Image by: author</h5>
+				<h5 id="imgAuthor" class="filterBox d-inline-flex p-2">Image by: author</h5>
 			</div>
 
 			<div id="weather" class="text-center filterBox p-3">
@@ -26,10 +26,10 @@
 
 	<section class="d-flex align-items-md-end justify-content-between flex-wrap flex-md-nowrap">
 
-		<div id="quote" class="filterBox p-3 me-md-3 text-center">
+		<div id="quoteParent" class="filterBox p-3 me-md-3 text-center">
 			<!-- TODO: CREATE FUNC FOR SHOWING AUTHOR ON HOVER (use transitions to look good) -->
-			<h5 class="mb-3 hidden">author name</h5>
-			<h5>"You can't shake hands with a clenched fist."</h5>
+			<p id="quoteAuthor" class="mb-3">author name</p>
+			<h5 id="quote" title="test">"You can't shake hands with a clenched fist."</h5>
 		</div>
 
 		<div id="todoList" class="filterBox p-3 my-3 my-md-0 width">
@@ -39,28 +39,40 @@
 			<ul role="listbox" tabindex="0" class="align-items-center p-0 justify-content-between">
 
 				<li class="row align-items-center">
-					<div class="col-10">Create the clock</div>
+					<div class="col-10">
+						<input type="checkbox" name="completedTodo">
+						Create the clock
+					</div>
 					<button class="hover col-2" onclick="deleteTodo()">
 						<i class="li mdi mdi-trash-can"></i>
 					</button>
 				</li>
 
 				<li class="row align-items-center">
-					<div class="col-10">Flip the weather</div>
+					<div class="col-10">
+						<input type="checkbox" name="completedTodo">
+						Flip the weather
+					</div>
 					<button class="hover col-2" onclick="deleteTodo()">
 						<i class="li mdi mdi-trash-can"></i>
 					</button>
 				</li>
 
 				<li class="row align-items-center">
-					<div class="col-10">Hover Quote</div>
+					<div class="col-10">
+						<input type="checkbox" name="completedTodo">
+						Hover Quote
+					</div>
 					<button class="hover col-2" onclick="deleteTodo()">
 						<i class="li mdi mdi-trash-can"></i>
 					</button>
 				</li>
 
 				<li class="row align-items-center">
-					<div class="col-10">Get Graded</div>
+					<div class="col-10">
+						<input type="checkbox" name="completedTodo">
+						Get Graded
+					</div>
 					<button class="hover col-2" onclick="deleteTodo()">
 						<i class="li mdi mdi-trash-can"></i>
 					</button>
