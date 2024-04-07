@@ -12,8 +12,8 @@ export class Todo {
 
 	get ListTemplate() {
 		return `
-			<li class="row align-items-center">
-				<div class="col-10">
+			<li class="d-flex align-items-center justify-content-between">
+				<div>
 					<input type="checkbox" name="completedTodo" ${this.completed ? 'checked' : ''}  onchange="app.TodosController.modifyChecked('${this.id}', event)">
 					${this.description}
 				</div>

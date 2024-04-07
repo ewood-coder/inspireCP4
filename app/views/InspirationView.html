@@ -16,13 +16,13 @@
 
 
 	<section class="text-center">
-		<h1 id="clock" class="fontSize filterBox d-inline-flex p-2 p-md-3">00:00 n/a</h1>
+		<h1 id="clock" class="fontSize filterBox d-inline-flex p-2 p-md-3">LOADING TIME</h1>
 	</section>
 
 
 	<section class="d-flex align-items-md-end justify-content-between flex-wrap flex-md-nowrap gap-3">
 
-		<div id="quoteParent" class="filterBox p-3 text-center">
+		<div id="quoteParent" class="filterBox p-3 text-center width">
 			<!-- TODO: CREATE FUNC FOR SHOWING AUTHOR ON HOVER (use transitions to look good) -->
 			<p id="quoteAuthor" class="mb-3">author name</p>
 			<h5 id="quote" title="test">"You can't shake hands with a clenched fist."</h5>
@@ -38,47 +38,7 @@
 			<hr>
 
 			<ul id="todoList" class="align-items-center p-0 justify-content-between">
-
-				<li class="row align-items-center">
-					<div class="col-10">
-						<input type="checkbox" name="completedTodo">
-						Create the clock
-					</div>
-					<button class="hover col-2" onclick="app.TodosController.deleteTodo()">
-						<i class="li mdi mdi-trash-can"></i>
-					</button>
-				</li>
-
-				<li class="row align-items-center">
-					<div class="col-10">
-						<input type="checkbox" name="completedTodo">
-						Flip the weather
-					</div>
-					<button class="hover col-2" onclick="app.TodosController.deleteTodo()">
-						<i class="li mdi mdi-trash-can"></i>
-					</button>
-				</li>
-
-				<li class="row align-items-center">
-					<div class="col-10">
-						<input type="checkbox" name="completedTodo">
-						Hover Quote
-					</div>
-					<button class="hover col-2" onclick="app.TodosController.deleteTodo()">
-						<i class="li mdi mdi-trash-can"></i>
-					</button>
-				</li>
-
-				<li class="row align-items-center">
-					<div class="col-10">
-						<input type="checkbox" name="completedTodo">
-						Get Graded
-					</div>
-					<button class="hover col-2" onclick="app.TodosController.deleteTodo()">
-						<i class="li mdi mdi-trash-can"></i>
-					</button>
-				</li>
-
+				<p>LOADING TODOS</p>
 			</ul>
 
 			<form class="row example p-2 text-center mx-auto" onsubmit="app.TodosController.createTodo(event)">
