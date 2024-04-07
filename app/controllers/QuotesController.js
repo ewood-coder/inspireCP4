@@ -9,7 +9,7 @@ import { setHTML } from "../utils/Writer.js";
 export class QuotesController {
 
 	constructor () {
-		console.log('Quotes 🎮 added')
+		console.log('Quotes 🎮 loaded')
 		AppState.on("quote", this.setQuote)
 		AppState.on("quoteAuthor", this.setQuoteAuthor)
 		this.getRandomQuote()

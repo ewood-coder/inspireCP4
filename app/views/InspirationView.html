@@ -1,49 +1,50 @@
-<section class="container-fluid p-md-4">
+<section class="p-2 p-md-4 d-flex flex-column gap-2 h-100 justify-content-between">
 
-	<section class="mt-2 mt-md-0">
-		<div class="d-flex">
+	<section class="d-flex justify-content-between">
 
-			<div id="ImgAuthor" class="flex-grow-1">
-				<h5 id="imgAuthor" class="filterBox d-inline-flex p-2">Image by: author</h5>
-			</div>
-
-			<div id="weather" class="text-center filterBox p-3">
-				<h4>26&deg; C</h4>
-				<h4>Sunny</h4>
-				<h4 class="fs-2 mb-0"><i class="mdi mdi-weather-sunny"></i></h4>
-			</div>
-
+		<div class="flex-fill me-5">
+			<h5 id="imgAuthor" class="filterBox d-inline-flex p-2">Image by: author</h5>
 		</div>
+
+		<div id="weather" class="text-center filterBox p-3">
+			<h4>26&deg; C</h4>
+			<h4>Sunny</h4>
+			<h4 class="fs-2 mb-0"><i class="mdi mdi-weather-sunny"></i></h4>
+		</div>
+
 	</section>
 
 
-	<section class=" my-3 my-md-5 py-4">
-		<div id="clock" class="text-center py-5 py-md-4 my-md-5">
-			<h1 class="fontSize filterBox d-inline-flex p-2 p-md-3">09:28am</h1>
-		</div>
+	<section class="text-center">
+		<h1 id="clock" class="fontSize filterBox d-inline-flex p-2 p-md-3">00:00 n/a</h1>
 	</section>
 
 
-	<section class="d-flex align-items-md-end justify-content-between flex-wrap flex-md-nowrap">
+	<section class="d-flex align-items-md-end justify-content-between flex-wrap flex-md-nowrap gap-3">
 
-		<div id="quoteParent" class="filterBox p-3 me-md-3 text-center">
+		<div id="quoteParent" class="filterBox p-3 text-center">
 			<!-- TODO: CREATE FUNC FOR SHOWING AUTHOR ON HOVER (use transitions to look good) -->
 			<p id="quoteAuthor" class="mb-3">author name</p>
 			<h5 id="quote" title="test">"You can't shake hands with a clenched fist."</h5>
 		</div>
 
-		<div id="todoList" class="filterBox p-3 my-3 my-md-0 width">
-			<h4 class="text-center">Todo List: 4 tasks</h4>
+		<div class="filterBox p-3 width">
+			<h4 class="text-center">
+				Todo List:&nbsp;
+				<span id="todoCount" style="color: red;">4</span>&nbsp;
+				left
+			</h4>
+
 			<hr>
 
-			<ul role="listbox" tabindex="0" class="align-items-center p-0 justify-content-between">
+			<ul id="todoList" class="align-items-center p-0 justify-content-between">
 
 				<li class="row align-items-center">
 					<div class="col-10">
 						<input type="checkbox" name="completedTodo">
 						Create the clock
 					</div>
-					<button class="hover col-2" onclick="deleteTodo()">
+					<button class="hover col-2" onclick="app.TodosController.deleteTodo()">
 						<i class="li mdi mdi-trash-can"></i>
 					</button>
 				</li>
@@ -53,7 +54,7 @@
 						<input type="checkbox" name="completedTodo">
 						Flip the weather
 					</div>
-					<button class="hover col-2" onclick="deleteTodo()">
+					<button class="hover col-2" onclick="app.TodosController.deleteTodo()">
 						<i class="li mdi mdi-trash-can"></i>
 					</button>
 				</li>
@@ -63,7 +64,7 @@
 						<input type="checkbox" name="completedTodo">
 						Hover Quote
 					</div>
-					<button class="hover col-2" onclick="deleteTodo()">
+					<button class="hover col-2" onclick="app.TodosController.deleteTodo()">
 						<i class="li mdi mdi-trash-can"></i>
 					</button>
 				</li>
@@ -73,15 +74,15 @@
 						<input type="checkbox" name="completedTodo">
 						Get Graded
 					</div>
-					<button class="hover col-2" onclick="deleteTodo()">
+					<button class="hover col-2" onclick="app.TodosController.deleteTodo()">
 						<i class="li mdi mdi-trash-can"></i>
 					</button>
 				</li>
 
 			</ul>
 
-			<form class="row example p-2 text-center mx-auto" onsubmit="">
-				<input type="text" placeholder="Add todo" name="add">
+			<form class="row example p-2 text-center mx-auto" onsubmit="app.TodosController.createTodo(event)">
+				<input type="text" placeholder="Add todo" name="description">
 				<button type="submit"><i class="fa fa-plus"></i></button>
 			</form>
 		</div>

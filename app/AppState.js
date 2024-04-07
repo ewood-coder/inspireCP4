@@ -1,6 +1,7 @@
 import { EventEmitter } from './utils/EventEmitter.js'
 import { createObservableProxy } from './utils/ObservableProxy.js'
 import { Account } from './models/Account.js'
+import { Todo } from './models/Todo.js'
 
 
 
@@ -26,6 +27,10 @@ class ObservableAppState extends EventEmitter {
 	/** @type {string} */
 	quoteAuthor = ''
 	// -------------------------------------------
+	/**
+	 * @type {Todo[]}
+	 */
+	todos = []
 
 }
 

@@ -1,4 +1,10 @@
 /* BASIC STYLES HERE */
+html,
+body,
+#router-view {
+	height: 100%;
+}
+
 .profile-picture {
 	height: 200px;
 	max-width: 100%;
