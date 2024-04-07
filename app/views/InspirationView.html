@@ -10,15 +10,15 @@
 			<h4>26&deg; C</h4>
 			<h4>Sunny</h4>
 			<h4 class="fs-2 mb-0"><i class="mdi mdi-weather-sunny"></i></h4>
-
-			<button onclick="app.WeatherController.flipDisplayTemp()">Flip Temp</button>
+			<hr />
+			<button class="tempButton" onclick="app.WeatherController.flipDisplayTemp()"><b>Flip Temp Scale</b></button>
 		</div>
 
 	</section>
 
 
-	<section class="text-center">
-		<h1 id="clock" class="fontSize filterBox d-inline-flex p-2 p-md-3">LOADING TIME</h1>
+	<section class="text-center my-5 my-md-0">
+		<h1 id="clock" class="fontSize filterBox d-inline-flex p-2 p-md-3 my-5 my-md-0">LOADING TIME</h1>
 	</section>
 
 
@@ -33,8 +33,7 @@
 		<div class="filterBox p-3 width">
 			<h4 class="text-center">
 				Todo List:&nbsp;
-				<span id="todoCount" style="color: red;">4</span>&nbsp;
-				left
+				<span id="todoCount" style="color: red;">LOADING</span>
 			</h4>
 
 			<hr>

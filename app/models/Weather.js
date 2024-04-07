@@ -18,7 +18,7 @@ export class Weather {
 			<h4>${this.description}</h4>
 			<h4 class="fs-2 mb-0"><img src="${this.icon}" alt="icon of weather"></h4>
 			<hr />
-			<button onclick="app.WeatherController.flipDisplayTemp()">Flip Temp</button>
+			<button class="tempButton" onclick="app.WeatherController.flipDisplayTemp()"><b>Flip Temp Scale</b></button>
 		`
 	}
 
