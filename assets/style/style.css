@@ -24,6 +24,7 @@ body {
 	/* background-image: url('../img/testBG2.png'); */
 	background-size: cover;
 	color: white;
+	background-attachment: fixed;
 }
 
 
@@ -53,6 +54,12 @@ ul {
 	}
 }
 
+@media screen and (min-width: 768px) {
+	.width {
+		width: 25%;
+	}
+}
+
 .hover {
 	background: none;
 	border: none;
@@ -72,6 +79,12 @@ ul {
 
 #quoteParent:hover #quoteAuthor {
 	display: block;
+}
+
+@media screen and (min-width: 768px) {
+	#quoteParent {
+		width: 75%;
+	}
 }
 
 .tempButton {
